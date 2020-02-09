@@ -1,0 +1,57 @@
+{
+  "id": "f5b868a2-ae40-4415-88b8-1908fb4ee60d",
+  "version": "2.0",
+  "name": "modulo servicios-correo",
+  "url": "https://www.choucairtesting.com",
+  "tests": [{
+    "id": "362257cd-8b51-4faa-a439-a30516ab9832",
+    "name": "correo",
+    "commands": [{
+      "id": "49d71c00-8d82-42c6-b368-72e8685b3ff3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d638c5ac-ab07-4259-9b43-67a992b9afa2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c94f50f8-f579-4c7e-854a-22b9c02be1b4",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1282)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e4d29bec-ab05-44fc-a152-fd0bdd6f6bb0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=serviciocliente@choucairtesting.com",
+      "targets": [
+        ["linkText=serviciocliente@choucairtesting.com", "linkText"],
+        ["css=.text-center:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'serviciocliente@choucairtesting.com')]", "xpath:link"],
+        ["xpath=//footer[@id='colophon']/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'mailto:serviciocliente@choucairtesting.com')]", "xpath:href"],
+        ["xpath=//footer/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'serviciocliente@choucairtesting.com')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e549b045-bac9-41c3-9535-f4773372b511",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["362257cd-8b51-4faa-a439-a30516ab9832"]
+  }],
+  "urls": ["https://www.choucairtesting.com/"],
+  "plugins": []
+}
